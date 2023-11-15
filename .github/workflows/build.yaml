@@ -15,5 +15,7 @@ jobs:
         run: mvn clean package -DskipTests
       - name: Unit & Integration Tests
         run: mvn clean package test
+      - name: print files
+        run: cd target;ls -lrt
       - name: Docker Build
         run: docker build -t model-api:latest .

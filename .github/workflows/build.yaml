@@ -1,4 +1,4 @@
-Name: Model API workflow
+name: Model API workflow
 
 on:
   push:
